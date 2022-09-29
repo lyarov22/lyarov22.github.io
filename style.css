@@ -1,0 +1,332 @@
+*,*::after, *::before {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+min-height: 100vh;
+
+}
+
+/* Начало головы */
+.container {
+max-width: 1920px;
+margin: 0 auto;
+}
+
+.logo p {
+font-family: 'Revalia', cursive;
+font-size: 20px;
+font-weight: 600;
+color: #34547A;
+line-height: 13px;
+margin-left: 50px;
+margin-top: 15px;
+    
+}
+
+.logo {
+margin-top: 3px;
+
+}
+
+.logo :hover{
+color:orange;
+
+}
+    
+.logo a {
+text-decoration: none;
+
+
+}
+
+.header_container {
+display: flex;
+justify-content: space-between;
+
+background-color: rgb(255, 255, 255);
+}
+
+.nav ul {
+display: flex;
+justify-content: space-between;
+
+
+}
+
+.nav li {
+
+margin-right: 100px;
+margin-top: 30px;
+
+
+font-family: 'Roboto', sans-serif;
+font-size: 25px;
+font-weight: 500;
+color: #34547A;
+
+
+}
+
+.nav :last-child {
+margin-right: 70px;
+}
+
+.nav a {
+text-decoration: none;
+}
+
+.nav li:hover{
+color:orange;
+font-weight: 10px;
+}
+
+
+/* блок с илюшой */
+.main {
+background-color: #EEEFF1;
+margin-top: 20px;
+width: auto;
+height: 380px;
+}
+    
+.main section {
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 54px;
+    
+margin-left: 100px;
+margin-top: 50px;
+    
+}
+    
+.text_b h2 {
+color:#757575;
+margin-top: -50px;
+line-height: 100px;
+}
+    
+.section_container img {
+margin-left: 750px;
+margin-top: -340px;
+}
+
+/* блок обо мне */
+.author h2 {
+text-align: center;
+
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+
+margin-top: 80px;
+}
+
+.author p {
+text-align: center;
+
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+color: #727272;
+
+margin-top: 15px;
+margin-left: auto;
+margin-right: auto;
+width: 26em;
+
+}
+
+
+
+/* синие проекты */
+.works {
+width: 98vmax;
+height: 150px;
+margin: 0 auto;
+
+background-color: #34547A;
+margin-top: 80px;
+
+display: flex;
+justify-content: space-between;
+
+
+}
+
+/* внутри синих проектов */
+.projects {
+display: flex;
+justify-content: space-between;
+
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+color: whitesmoke;
+
+align-items: center;
+
+line-height: 13px;
+
+
+
+}
+
+.projects img {
+margin-left:40px;
+}
+
+
+/* мои навыки */
+.skills {
+display: flex;
+justify-content: space-between;
+margin-top: 80px;
+margin-right: 200px;
+
+
+
+}
+
+.skills img {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 100px;
+
+
+width: 350px;
+
+}
+
+.skills h2 {
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+margin-left: 200px;
+
+
+}
+
+
+.subskills {
+margin-left: -300px;
+
+
+
+}
+
+.subskills h1 {
+color: white;
+}
+
+.subskills h3 {
+
+border-radius: 30px;
+width: 200px;
+
+background-color: #34547A;
+color: aliceblue;
+font-family: cursive;
+
+}
+
+.subskills h4 {
+border: 1px solid blue;
+border-radius: 30px;
+width: 500px;
+
+background-color: #34547A;
+color: aliceblue;
+font-family: cursive;
+}
+
+.subskills h5 {
+border: 1px solid blue;
+border-radius: 30px;
+width: 100px;
+
+background-color: #34547A;
+color: aliceblue;
+font-family: cursive;
+}
+
+.subskills p {
+font-family: 'Verdana', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+margin-top: 80px;
+
+
+
+}
+
+
+/* фотокарточки чтото там */
+.photo {
+background-color: #EEEFF1;
+height: 300px;
+margin-top: 80px;
+
+}
+
+
+
+/* дно */
+.flex {
+display: flex;
+justify-content: space-between;
+
+width: 98,5vmax;
+height: 75px;
+margin: 0 auto;
+
+background-color: #34547A;
+margin-top: 80px;
+
+}
+
+.flex a {
+display: flex;
+justify-content: space-between;
+    
+font-family: 'Revalia', cursive;
+font-size: 20px;
+font-weight: 500;
+color: whitesmoke;
+line-height: 13px;
+align-items: center;
+
+}
+
+.flex p {
+margin-left: -200px;
+}
+.flex p:hover{
+color:orange;
+font-weight: 10px;
+
+}
+
+.flex a {
+text-decoration: none;
+margin-left: 50px;
+
+}
+
+.flex img {
+width: 40%;
+
+}
