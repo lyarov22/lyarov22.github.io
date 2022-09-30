@@ -311,7 +311,47 @@ margin-left: auto;
 margin-right: auto;
 }
 
+/* контакты */
+
+.contacts {
+
+background-color: #EEEFF1;
+height: 400px;
+margin-top: 200px;
+}
+
+.contacts h2 {
+display: flex;
+justify-content: space-between;
+
+text-align: center;
+
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 5\600;
+font-size: 32px;
+
+margin-top: 60px;
+margin-left: 500px;
+
+}
+
+.contacts button {
+
+height: 40px;
+width: 200px;
+border: 1px solid #34547A;
+border-radius: 10px;
+color: white;
+background-color: #34547A;
+
+margin-top: 200px;
+margin-left: 520px;
+}
+
+
 /* дно */
+
 .flex {
 display: flex;
 justify-content: space-between;
@@ -321,7 +361,34 @@ height: 75px;
 margin: 0 auto;
 
 background-color: #34547A;
-margin-top: 200px;
+margin-top: 80px;
+
+}
+
+.flex img {
+width: 40%;
+
+}
+
+.flex :hover{
+color:orange;
+font-weight: 10px;
+    
+}
+
+.flex p {
+   
+display: flex;
+justify-content: space-between;
+            
+font-family: 'Revalia', cursive;
+font-size: 20px;
+font-weight: 500;
+color: whitesmoke;
+line-height: 13px;
+align-items: center;
+
+margin-left: -200px;
 
 }
 
@@ -336,24 +403,8 @@ color: whitesmoke;
 line-height: 13px;
 align-items: center;
 
-}
-
-.flex p {
-margin-left: -200px;
-}
-.flex p:hover{
-color:orange;
-font-weight: 10px;
-
-}
-
-.flex a {
 text-decoration: none;
 margin-left: 50px;
 
 }
 
-.flex img {
-width: 40%;
-
-}
