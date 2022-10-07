@@ -372,9 +372,8 @@ margin-left: 50px;
 }
 
 
-@media all and (max-width: 300px){
+@media all and (max-width: 650px){
 body {
-overflow-x: hidden;
 }
 .logo p {
 margin-left: 20px;
