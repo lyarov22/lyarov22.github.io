@@ -99,7 +99,7 @@ height: 380px;
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 40px;
+font-size: 28px;
 line-height: 54px;
     
 margin-left: 100px;
@@ -160,7 +160,6 @@ margin-top: 80px;
 display: flex;
 justify-content: space-between;
 
-
 }
 
 /* внутри синих проектов */
@@ -218,19 +217,12 @@ font-weight: 500;
 font-size: 32px;
 margin-left: 200px;
 
-
 }
 
 
 .subskills {
 margin-left: -300px;
 
-
-
-}
-
-.subskills h1 {
-color: white;
 }
 
 .subskills h3 {
@@ -244,34 +236,12 @@ font-family: cursive;
 
 }
 
-.subskills h4 {
-border: 1px solid blue;
-border-radius: 30px;
-width: 500px;
-
-background-color: #34547A;
-color: aliceblue;
-font-family: cursive;
-}
-
-.subskills h5 {
-border: 1px solid blue;
-border-radius: 30px;
-width: 100px;
-
-background-color: #34547A;
-color: aliceblue;
-font-family: cursive;
-}
-
 .subskills p {
 font-family: 'Verdana', sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 18px;
 margin-top: 80px;
-
-
 
 }
 
@@ -286,13 +256,6 @@ margin-left: 45px;
 }
 
 .page img {
-width: 240px;
-height: 240px;
-margin-left: -4px;
-
-}
-
-.page2 img {
 width: 240px;
 height: 240px;
 margin-left: -4px;
@@ -408,3 +371,180 @@ margin-left: 50px;
 
 }
 
+
+@media all and (min-width: 0px) and (max-width: 1080px) {
+
+body {
+overflow-x: hidden;
+}
+.logo p {
+margin-left: 20px;
+margin-top: 25px;
+
+font-size: 27px;
+line-height: 30px;
+
+}
+
+.nav {
+margin-right: 90px;
+height: 130px;
+
+
+}
+
+.nav ul {
+
+width: 100px;
+height: 100px;
+transform: translate(-650px);
+
+display: grid;
+grid-template-columns: repeat(2, 2fr);
+
+
+
+}
+
+
+.main {
+width: 480px;
+height: 600px;
+
+}
+
+.text_a h1 {
+font-size: 35px;
+margin-left: -70px;
+}
+
+.text_b h2 {
+font-size: 35px;
+margin-left: -70px;
+}
+
+.section_container img {
+width: 30%;
+margin-bottom: 300px;
+margin-left: 300px;
+}
+
+.author h2 {
+margin-right: 600px;
+margin-top: 40px;
+}
+
+.author p {
+margin-right: 650px;
+margin-top: 20px;
+width: 400px;
+margin-bottom: -20px;
+}
+
+.works {
+width: 460px;
+margin-right: 615px;
+
+height: 250px;
+}
+
+.projects {
+display: grid;
+grid-template-columns: repeat(3, 2fr);
+margin: 0 auto;
+
+font-size: 19px;
+}
+
+.projects img {
+width: 30%;
+}
+
+.skills h2 {
+white-space: nowrap;
+margin-left: 140px;
+margin-top: -25px;
+
+}
+
+.subskills {
+margin-left: -300px;
+margin-top: -20px;
+}
+
+.subskills p {
+width: 480px;
+}
+
+.subskills h3 {
+margin-bottom: -50px;
+}
+
+.skills img {
+margin-right: 300px;
+margin-top: 250px;
+
+transform: translate(-250px);
+
+width: 20%;
+height: 20%;
+}
+
+.photo {
+width: 480px;
+height: 1000px;
+
+grid-template-columns: repeat(2, 5fr);
+margin-left: -5px;
+
+margin-top: 60px;
+margin-bottom: 60px;
+}
+
+.contacts {
+width: 480px;
+margin-bottom: 180px;
+}
+
+.contacts h2 {
+margin-left: 100px;
+}
+
+.contacts button {
+margin-left: 135px;
+}
+
+.microsoft {
+height: 200px;
+width: 480px;
+
+}
+
+.microsoft img {
+width: 110px;
+height: 60%;
+margin-left: 0px;
+
+transform: translateY(450px);
+
+}
+
+
+.footer {
+width: 480px;
+margin-top: -40px;
+}
+.flex a {
+margin-left: 300px;
+margin-right: -50px;
+}
+
+.flex img {
+transform: translate(-300px);
+}
+
+.flex p {
+transform: translate(-300px);
+
+}
+} 
