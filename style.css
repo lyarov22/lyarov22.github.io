@@ -372,7 +372,7 @@ margin-left: 50px;
 }
 
 
-@media all and (max-width: 480px){
+@media all and (max-width: 300px){
 body {
 overflow-x: hidden;
 }
