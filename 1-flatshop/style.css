@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/*Голова хрень*/
+
+.container {
+max-width: 1220px;
+
+}
+
+.header_container {
+display: flex;
+justify-content: space-between;
+min-height: 100px;
+align-items: center;
+
+}
+
+.logo img{
+margin-left: 50px;
+width: 50%;
+
+}
+
+ul {
+display: flex;
+width: 400px;
+justify-content: space-between;
+
+}
+
+ul a {
+color: rgb(60, 77, 79);
+text-decoration: none;
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-size: 18px;
+
+}
+
+ul a:hover {
+color: red;
+
+}
+
+.tel a {
+margin-right: 20px;
+text-decoration: none;
+color: rgb(60, 77, 79);
+font-family: 'Lato', sans-serif;
+font-style: normal;
+    
+}
+
+.tel a:hover {
+    color: red;
+}
+
+
+button {
+background: #FFFFFF;
+border: 1px solid rgb(60, 77, 79);
+border-radius: 12px;
+padding: 15px 25px 15px 25px;
+color: rgb(60, 77, 79);
+
+}
+
+button:hover {
+    color: red;
+}
+
+
+/*Красная хрень*/
+
+.header_info {
+height: 400px;
+margin-top: -50px;
+
+background: #D44B4B;
+
+}
+
+.header_info a {
+text-decoration: none;
+
+}
+
+.header_info p {
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 26px;
+color: #FFFFFF;
+margin: 50px 0 0 100px;
+
+}
+
+.header_info h5 {
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 26px;
+color: #D44B4B;
+margin: 50px 0 0 100px;
+    
+}
+
+.header_info p2 {
+border: 1px solid white;
+border-radius: 20px;
+padding: 3px 8px 8px;
+}
+
+.header_info p3 {
+border: 1px solid white;
+border-radius: 20px;
+padding: 3px 8px 8px;
+}
+
+.header_info h1 {
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 53px;
+color: #FFFFFF;
+width: 500px;
+margin: 0 0 20px 100px;
+
+}
+
+.header_info button {
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-size: 19px;
+font-weight: 600;
+color: #605353;
+    
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 15px 70px 15px;
+gap: 10px;
+background: #FFFFFF;
+box-shadow: 2px 2px 4px #D44B4B;
+border-radius: 10px;
+margin: 0 0 0 100px;
+
+}
+
+.header_info {
+background: #D44B4B; 
+min-height: 300px; 
+background-image: url(img/city.png); 
+background-repeat: no-repeat; 
+background-position: right bottom;
+background-size: 50%;
+}
+
+.steps_cont {
+display: flex;
+justify-content: space-between;
+}
+
+.item { 
+float: left;
+margin-top: 70px; 
+border: 1px solid black;
+border-radius: 25px;
+border-top-left-radius: 5px;
+width: 250px;
+height: 250px; 
+margin: 70px 0 0 9%;
+
+} 
+
+.item p { 
+margin-left: 39px; 
+margin-top: 5px; 
+
+font-family: 'Lato', sans-serif; 
+font-style: normal; 
+font-weight: 750; 
+font-size: 35px; 
+line-height: 21px;
+color: black; 
+transform: translate(-38px, -19px);
+     
+}
+
+.item h1{ 
+margin-left: 5px; 
+margin-top: -10px; 
+    
+font-family: 'Lato', sans-serif; 
+font-style: normal; 
+font-weight: 400; 
+font-size: 13px; 
+
+color: black; 
+border: 1px solid black;
+border-radius: 30px;
+padding: 8px 8px 7px 10px;
+}
+
+.item img {
+transform: translate(-1px, -50px);
+width: 250px;
+height: 206px;
+margin-top: 40px;
+}
+
+
+.txt {
+display: flex;
+justify-content: space-between;
+min-height: 200px;
+align-items: center;
+text-align: center;
+
+width: 555px;
+margin: 50px 0 0 290px;
+
+
+}
+
+.txt h1 {
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 35px;
+color: black;
+margin: 50px 0 0 100px;
+
+}
+    
+.txt p2 {
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: 400;
+border: 1px solid red;
+border-radius: 10px;
+padding: 2px 2px 2px 2px;
+}
+
+
+
+.start {
+display: flex;
+justify-content: space-between;
+
+height: 500px;
+width: 700px;
+margin-left: 250px;
+margin-top: 50px;
+
+align-items: center;
+text-align: center;
+
+border: 1px solid gray;
+border-radius: 20px;
+gap: 10px;
+background: #ffffff;
+box-shadow: 2px 2px 6px black;
+
+
+}
+
+.city img{
+
+width: 200px;
+height: 400px;
+
+}
+
+.city {
+border: 1px solid gray;
+border-radius: 20px;
+border-top-right-radius: 1px;
+border-bottom-right-radius: 1px;
+border-color: #D44B4B;
+background-color: #D44B4B;
+margin-top: 0px;
+}
+
+.start p {
+
+margin-top: -230px;
+margin-left: -55px;
+
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 35px;
+color: black;
+
+
+}
+
+.start p2{
+color: #D44B4B;
+}
+
+.text h1 {
+
+margin-top: 40px;
+margin-left: 40px;
+width: 335px;
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 35px;
+color: black;
+text-align: left;
+
+}
+
+.start img {
+margin-top: 100px;
+margin-left: 10px;
+
+}
+
+.start button {
+
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-size: 19px;
+font-weight: 600;
+color: #ffffff;
+        
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 15px 70px 15px;
+
+background: #D44B4B;
+border-radius: 10px;
+margin: 0 0 0 100px;
+
+margin-left: -460px;
+margin-top: -40px;
+width: 360px;
+}
+
+.start a {
+text-decoration: none;
+}
+
+.posle {
+margin-top: 300px;
+margin-left: -680px;
+}
+
+.posle h2{
+
+margin-left: 255px;
+
+font-family: 'Lato', sans-serif;
+font-style: normal;
+line-height: 25px;
+font-size: 15px;
+
+color: rgb(0, 0, 0);
+width: 400px;
+text-align: left;
+
+
+}
+
+.posle h3 {
+color: white;
+line-height: 25px;
+font-size: 15px;
+
+margin-left: 240px;
+}
+
+/* Down */
+
+.down {
+background-color: #475658;
+width: auto;
+height: 139px;
+margin-top: 100px;
+
+}
+
+.down img {
+width: 6%;
+margin-left: 120px;
+margin-top: 25px;
+}
+
+.gps_logo img {
+margin-left: 416px;
+margin-top: -150px;
+width: 1.9%;
+    
+}
+
+.cont {
+margin-left: 450px;
+margin-top: -79px;
+
+}
+.cont h1 {
+margin-top: -105px;
+
+font-family: 'Lato', sans-serif;
+font-style: normal;
+line-height: 20px;
+font-size: 15px;
+color: white;
+}
+
+.cont h2 {
+margin-top: 26px;
+
+font-family: 'Lato', sans-serif;
+font-style: normal;
+line-height: 14px;
+font-size: 15px;
+color: white;
+}
+
+.cont_logo img {
+margin-left: 416px;
+margin-top: -105px;
+width: 2%;
+
+}
+
+
+
+.rejim_logo img {
+margin-left: 805px;
+margin-top: -135px;
+width: 1.8%;
+}
+
+.rejim {
+margin-left: 840px;
+margin-top: -80px;
+
+font-family: 'Lato', sans-serif;
+font-style: normal;
+line-height: 14px;
+font-size: 15px;
+
+color: rgb(255, 255, 255);
+
+}
+
+.rejim_time {
+margin-left: 840px;
+margin-top: 10px;
+
+font-family: 'Lato', sans-serif;
+font-style: normal;
+line-height: 19px;
+font-size: 15px;
+
+color: rgb(255, 255, 255);
+
+}
