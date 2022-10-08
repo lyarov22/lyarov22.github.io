@@ -109,7 +109,7 @@ margin-top: 50px;
     
 }
     
-.text_b h1 {
+.text_b h2 {
 color:#757575;
 margin-top: -50px;
 line-height: 100px;
@@ -376,15 +376,13 @@ margin-left: 50px;
 
 @media all and (min-width: 0px) and (max-width: 480px) {
 
+html {
+overflow-x: hidden;
+}
+
 body {
 width: 100vmin;
 
-overflow-x: hidden;
-
-}
-
-html {
-overflow-x: hidden;
 }
 
 .container {
@@ -437,7 +435,7 @@ width: 400px;
 line-height: 40px;
 }
 
-.text_b h1 {
+.text_b h2 {
 font-size: 27px;
 margin-left: -80px;
 width: 400px;
@@ -446,9 +444,9 @@ margin-bottom: 20px;
 }
 
 .section_container img {
-width: 50%;
-margin-bottom: -70px;
-margin-left: 150px;
+width: 30%;
+margin-bottom: -100px;
+margin-left: 170px;
 }
 
 .author h2 {
