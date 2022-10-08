@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,*::after, *::before {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+html {
+overflow-x: hidden;
+
+}
+
+body {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+min-height: 100vh;
+
+}
+
+body a {
+text-decoration: none;
+
+}
+
+.container {
+max-width: 1920px;
+margin: 0 auto;
+
+}
+
+
+/* блок1 */
+
+.head0 {
+height: 29px;
+width: 100vmax;
+
+background-color: black;
+
+text-align: center;
+
+min-height: 10em;
+display: table-cell;
+vertical-align: middle;
+
+}
+
+.head0 p {
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+
+color: #FBFBFB;
+
+letter-spacing: 2px;
+
+}
+
+
+/* блок 2 */
+
+.header_container {
+height: 66px;
+width: 100vmax;
+
+background-color: white;
+
+display: flex;
+align-items: center;
+
+border: 1px solid red;
+}
+
+
+/* логотип */
+
+.logo {
+height: 66px;
+width: auto;
+
+align-items: center;
+
+line-height: 65px;
+text-align: center;
+
+padding-left: 20px;
+padding-right: 20px;
+
+}
+
+.logo img {
+width: auto;
+height: 36px;
+
+vertical-align: middle;
+
+}
+
+
+/* навбар */
+
+.nav {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+
+
+
+}
+
+.nav p {
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+
+white-space: nowrap;
+
+letter-spacing: 1px;
+text-transform: uppercase;
+
+color: #000000;
+
+text-align: center;
+
+
+padding-right: 10px;
+
+border: 1px solid blue;
+}
+
+
+/* иконки профиль и корзина */
+
+.logo2 {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+
+padding-right: 15px;
+padding-left: 20px;
+
+margin-left: auto;
+}
+
+.logo2 img {
+padding-right: 15px;
+width: auto;
+height: 25px;
+
+}
+
+
+/* экран 1 */
+
+.main {
+width: 100vmax;
+
+}
+
+.section_container {
+width: 100vmax;
+
+}
+
+.screen1 {
+width: 100vmax;
+height: 810px;
+
+background-color: gray;
+/* background: url(/img/back1.png) no-repeat; */
+
+text-align: center;
+
+border: 1px solid white;
+
+}
+
+.screen1_text {
+height: 29px;
+width: 100vmax;
+
+background-color: wheat;
+
+text-align: center;
+
+min-height: 10em;
+display: table-cell;
+vertical-align: middle;
+}
+
+.screen1_text h1 {
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 44px;
+line-height: 51px;
+
+color: #000000;
+
+white-space: nowrap;
+text-align: center;
+
+border: 2px solid blue;
+
+padding-top: 15px;
+padding-bottom: 15px;
+
+}
+
+.screen1_text p {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 19px;
+
+text-align: center;
+letter-spacing: 1px;
+
+color: #000000;
+
+border: 2px solid yellow;
+
+padding-bottom: 15px;
+padding-top: 15px;
+
+}
+
+.screen1_buttons {
+padding: 15px 15px 15px 15px;
+
+border: 2px solid red;
+
+}
+
+.screen1_buttons button{
+border: 1px solid #FF4A32;
+background-color: #FF4A32;
+border-radius: 35px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 19px;
+color: white;
+
+text-align: center;
+
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 45px;
+padding-right: 45px;
+
+}
+
+.screen1_buttons a {
+padding-right: 10px;
+padding-left: 10px;
+
+}
+
+
+/* логотипы на черном */
+
+.subscreen1 {
+width: 100vmax;
+height: 83px;
+background-color: #000000;
+
+align-items: center;
+
+}
+
+.logos {
+width: 100vmax;
+height: 83px;
+background-color: #000000;
+
+align-items: center;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+
+}
+
+.subscreen1 img {
+padding-left: 50px;
+padding-right: 10px;
+
+
+}
+
+
+/* экран 2 */
+
+.screen2 {
+width: 100vmax;
+height: 800px;
+
+background-color: white;
+}
+
+.screen2 h1 {
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 36px;
+
+color: #000000;
+
+white-space: nowrap;
+text-align: center;
+
+padding-top: 40px;
+padding-bottom: 7.5px;
+}
+
+.screen2 p {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 19px;
+
+text-align: center;
+letter-spacing: 1px;
+
+color: #000000;
+
+padding-bottom: 23.5px;
+padding-top: 15px;
+
+margin: 0 auto;
+width: 56%;
+}
+
+.screen2 h3 {
+border: 2px solid #CFCFCF;
+border-style: none;
+border-top-style: solid;
+
+color: white;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 19px;
+
+text-align: center;
+letter-spacing: 1px;
+
+margin: 0 auto;
+width: 5%;
+
+padding-bottom: 20px;
+
+}
+
+
+/* экран 3 */
+
+.screen3 {
+width: 100vmax;
+height: 736px;
+
+background-color: grey;
+
+text-align: center;
+
+border: 1px solid white;
+
+}
+
+.screen3_text {
+height: 29px;
+width: 100vmax;
+
+background-color: wheat;
+
+text-align: center;
+
+min-height: 10em;
+display: table-cell;
+vertical-align: middle;
+}
+
+.screen3_text h1 {
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 44px;
+line-height: 51px;
+
+color: #000000;
+
+white-space: nowrap;
+text-align: center;
+
+border: 2px solid blue;
+
+padding-top: 0px;
+padding-bottom: 15px;
+
+}
+
+.screen3_text p {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 19px;
+
+text-align: center;
+letter-spacing: 1px;
+
+color: #000000;
+
+border: 2px solid yellow;
+
+padding-bottom: 25px;
+padding-top: 15px;
+
+}
+
+.screen1_buttons {
+padding: 15px 15px 15px 15px;
+
+border: 2px solid red;
+}
+
+.screen3_buttons button{
+border: 1px solid #FF4A32;
+background-color: #FF4A32;
+border-radius: 35px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 19px;
+color: white;
+
+text-align: center;
+
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 45px;
+padding-right: 45px;
+
+}
