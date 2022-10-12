@@ -8,7 +8,7 @@
 body {
     height: 100vh;
     display: flex;
-    background: url(/img/ilusha_perfect.png);
+    background: url(./img/ilusha_perfect.png);
     background-repeat: no-repeat;
     
     background-position: center;
@@ -19,13 +19,13 @@ body {
 
 body.AnErrorHasOccured
 {
-  background: url(/img/поносы.jfif);
+  background: url(./img/поносы.jfif);
 
 }
 
 body.AnErrorHasOccured2
 {
-  background: url(/img/ilusha_ahh.png);
+  background: url(./img/ilusha_ahh.png);
 
 }
 
