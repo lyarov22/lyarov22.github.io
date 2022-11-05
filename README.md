@@ -1,8 +1,0 @@
-# ryzenkz.github.io
-# 
-#
-#
-#
-#
-#
-#
