@@ -165,7 +165,7 @@ width: 100vmax;
 }
 
 .screen1_pre {
-background: url(/img/back1.png) no-repeat;
+background: url(./img/back1.png) no-repeat;
 
 width: 100vmax;
 height: 810px;
@@ -483,7 +483,7 @@ color: #FFFFFF;
 /* экран 3 */
 
 .screen3 {
-background: url(/img/back3.jpg) no-repeat;
+background: url(./img/back3.jpg) no-repeat;
 width: 100vmax;
 height: 736px;
 
@@ -1050,7 +1050,7 @@ cursor: pointer;
 }
 
 #arrowTop::before {
-content: url(/img/logo.svg);
+content: url(./img/logo.svg);
 padding-left: 10px;
 
 }
