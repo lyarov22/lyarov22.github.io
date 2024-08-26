@@ -5,7 +5,7 @@ import { displayFigmaProjects } from './components/displayFigmaProjects.js';
 import { displayOtherProjects } from './components/displayOtherProjects.js';
 
 document.addEventListener("DOMContentLoaded", function () {
-    const BASE_URL = 'http://localhost:8000/';
+    const BASE_URL = 'http://213.148.9.12:2201/';
 
     const apiUrls = {
         workExperience: `${BASE_URL}work_experience/`,
