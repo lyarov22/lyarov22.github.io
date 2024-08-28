@@ -5,7 +5,7 @@ import { displayFigmaProjects } from './components/displayFigmaProjects.js';
 import { displayOtherProjects } from './components/displayOtherProjects.js';
 
 document.addEventListener("DOMContentLoaded", function () {
-    const BASE_URL = 'https://213.148.9.12/';
+    const BASE_URL = 'https://fastfolio.onrender.com';
 
     const apiUrls = {
         workExperience: `${BASE_URL}work_experience/`,
