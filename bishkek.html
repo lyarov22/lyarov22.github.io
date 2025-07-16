@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Бишкек • Коллаж Путешествия</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@400;600;700&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #fdf8f0; /* More creamy background */
+      }
+      .font-handwriting {
+        font-family: 'Caveat', cursive;
+      }
+      .polaroid {
+        background: white;
+        padding: 1rem;
+        padding-bottom: 2.5rem;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+      }
+      .polaroid:hover {
+        transform: scale(1.05) rotate(0deg) !important;
+        z-index: 10;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      }
+      .polaroid img {
+        max-height: 450px;
+      }
+      .tape {
+        position: absolute;
+        width: 80px;
+        height: 25px;
+        background: rgba(255, 255, 0, 0.5);
+        border-left: 2px dotted rgba(0,0,0,0.1);
+        border-right: 2px dotted rgba(0,0,0,0.1);
+        transform: rotate(-5deg);
+      }
+      .tape-top-left { top: -10px; left: -15px; }
+      .tape-top-right { top: -10px; right: -15px; transform: rotate(5deg); }
+      .tape-bottom-left { bottom: -10px; left: -15px; transform: rotate(5deg); }
+    </style>
+  </head>
+  <body class="text-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-24">
+      <!-- Заголовок -->
+      <header class="text-center relative py-8">
+        <div class="tape tape-top-left"></div>
+        <h1 class="font-handwriting text-7xl text-pink-600 drop-shadow-lg">Бишкек: Записки на полях</h1>
+        <p class="text-gray-500 mt-4 text-lg">Май 2025 • #путешествия</p>
+      </header>
+
+      <!-- Основной Коллаж -->
+      <main class="grid grid-cols-12 gap-6 auto-rows-auto">
+        <!-- Карточка 1: Переправа -->
+        <div class="col-span-12 md:col-span-4 p-6 border-4 border-dashed border-pink-400 rounded-2xl bg-white shadow-lg transform -rotate-2">
+          <h2 class="text-2xl font-bold text-pink-600 mb-3 font-handwriting">🚦 Граница на скорости</h2>
+          <p class="text-base">
+            Путь из Кордая в Бишкек занял всего 40 минут, а обратно — и вовсе 10. Казахстанцы проходят по электронной системе, что невероятно ускоряет процесс. Никаких очередей и бумажной волокиты. Ощущение, будто пересекаешь не границу, а просто едешь по платной дороге.
+          </p>
+        </div>
+
+        <!-- Фото 1: Горы -->
+        <div class="col-span-12 md:col-span-8 polaroid transform rotate-3">
+          <img src="./bishkek/f1.jpg" class="w-full h-full object-cover" />
+          <p class="font-handwriting text-2xl text-center mt-4">Столица Кыргызстана</p>
+        </div>
+
+        <!-- Фото 2: Рынок -->
+        <div class="col-span-12 md:col-span-7 polaroid transform -rotate-3 relative">
+          <div class="tape tape-top-right"></div>
+          <img src="./bishkek/m1.jpeg" class="w-full h-full object-cover" />
+          <p class="font-handwriting text-2xl text-center mt-4">Величие Ала Арчи</p>
+        </div>
+        
+        <!-- Карточка 2: Деньги -->
+        <div class="col-span-12 md:col-span-5 p-6 bg-yellow-100 border-l-8 border-yellow-400 rounded-xl shadow-md transform rotate-1">
+          <h2 class="text-2xl font-bold text-yellow-800 mb-3 font-handwriting">💰 Финансовый вопрос</h2>
+          <p class="text-base">
+            Главный лайфхак: меняйте доллары на сомы сразу на границе. Курс там оказался значительно выгоднее, чем в городских обменниках. Банкоматы в Бишкеке есть, но будьте готовы к комиссии около 160 сом за снятие. Лучше иметь при себе наличные.
+          </p>
+        </div>
+
+        <!-- Карточка 3: Транспорт -->
+        <div class="col-span-12 md:col-span-5 p-6 bg-blue-100 border-t-8 border-blue-400 rounded-xl shadow-lg transform -rotate-1">
+          <h2 class="text-2xl font-bold text-blue-800 mb-3 font-handwriting">🚌 Автобусные истории</h2>
+          <p class="text-base">
+            Проезд на автобусе №34 стоит всего 30 сом (меньше 20 центов по карте), но бдительность — ваш лучший друг. Водитель попытался взять с меня двойную плату, надеясь на невнимательность туриста. Всегда проверяйте сдачу и не бойтесь уточнять стоимость.
+          </p>
+        </div>
+
+        <!-- Фото 3: Улица -->
+        <div class="col-span-12 md:col-span-7 polaroid transform rotate-2 relative">
+          <div class="tape tape-top-left"></div>
+          <img src="./bishkek/g1.jpeg" class="w-full h-full object-cover" />
+          <p class="font-handwriting text-2xl text-center mt-4">Панорама старого города</p>
+        </div>
+        
+        <!-- Карточка 4: Связь -->
+        <div class="col-span-12 md:col-span-6 p-6 bg-pink-50 border-r-8 border-pink-300 rounded-xl shadow-md transform rotate-1">
+          <h2 class="text-2xl font-bold text-pink-700 mb-3 font-handwriting">📱 Всегда на связи</h2>
+          <p class="text-base">
+            Сим-карту оператора Mega можно купить прямо у ЦУМа. За 2.5 доллара я получил 16 ГБ интернета на неделю — более чем достаточно. Для оформления понадобится удостоверение личности. Процесс занял минут пять, и вот я уже делюсь впечатлениями онлайн.
+          </p>
+        </div>
+
+        <!-- Карточка 5: Что смотреть -->
+        <div class="col-span-12 md:col-span-6 p-6 bg-lime-100 border-b-8 border-lime-400 rounded-xl shadow-xl transform -rotate-1">
+          <h2 class="text-2xl font-bold text-lime-800 mb-3 font-handwriting">🏞 Маршрут на день</h2>
+          <ul class="text-base list-disc list-inside space-y-2">
+            <li><b>Центральная площадь Ала-Тоо:</b> сердце города с огромным флагом и сменой караула.</li>
+            <li><b>Поющий фонтан:</b> вечером здесь собирается весь город, чтобы посмотреть на свето-музыкальное шоу.</li>
+            <li><b>Дубовый парк и Музей изобразительных искусств:</b> оазис тишины и культуры в центре столицы.</li>
+            <li><b>Монумент Победы:</b> величественный памятник, у которого всегда живые цветы.</li>
+          </ul>
+        </div>
+      </main>
+
+      <!-- Галерея -->
+      <section class="pt-16">
+        <h2 class="font-handwriting text-6xl text-center text-gray-700 mb-12">Моменты, застывшие в кадре</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="polaroid transform rotate-2">
+            <img src="./bishkek/g3.jpeg" alt="Фото из Бишкека 1" class="w-full h-full object-cover">
+          </div>
+          <div class="polaroid transform -rotate-3">
+            <img src="./bishkek/g2.jpeg" alt="Фото из Бишкека 2" class="w-full h-full object-cover">
+          </div>
+          <div class="polaroid transform rotate-1">
+            <img src="./bishkek/g6.jpeg" alt="Фото из Бишкека 3" class="w-full h-full object-cover">
+          </div>
+          <div class="polaroid transform -rotate-1">
+            <img src="./bishkek/g7.jpeg" alt="Фото из Бишкека 4" class="w-full h-full object-cover">
+          </div>
+          <div class="polaroid transform -rotate-2 col-span-2 md:col-span-1">
+            <img src="./bishkek/f2.jpeg" alt="Фото из Бишкека 5" class="w-full h-full object-cover">
+          </div>
+          <div class="polaroid transform rotate-3">
+            <img src="./bishkek/g5.jpg" alt="Фото из Бишкека 6" class="w-full h-full object-cover">
+          </div>
+          <div class="polaroid transform -rotate-2">
+            <img src="./bishkek/m2.jpeg" alt="Фото из Бишкека 7" class="w-full h-full object-cover">
+          </div>
+           <div class="polaroid transform rotate-2">
+            <img src="./bishkek/g5.jpeg" alt="Фото из Бишкека 8" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </section>
+
+      <!-- Итог -->
+      <footer class="mt-24 text-center">
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Бишкек — это город контрастов, где советская монументальность встречается с азиатским колоритом. Два дня пролетели незаметно, оставив чувство свободы и желание вернуться. Но настоящее сокровище Кыргызстана — это его горы. Там хочется остаться навсегда.
+        </p>
+        <p class="font-handwriting text-3xl text-gray-500 mt-8">⛺ Сделано с душой • Илья • 2025</p>
+      </footer>
+    </div>
+  </body>
+</html>
