@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ташкент • Гайд по поездке</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&family=Inter:wght@400;600;700&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+        min-height: 100vh;
+      }
+      .headline {
+        font-family: 'Unbounded', sans-serif;
+        letter-spacing: 0.04em;
+        background: linear-gradient(90deg, #00ffb3 10%, #00c3ff 60%, #fff700 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .glass {
+        background: rgba(255,255,255,0.13);
+        border-radius: 2rem;
+        box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1.5px solid rgba(255,255,255,0.18);
+      }
+      .mosaic-border {
+        border: 4px solid transparent;
+        border-image: repeating-linear-gradient(135deg, #00ffb3 0 10px, #fff700 10px 20px, #00c3ff 20px 30px, #fff 30px 40px) 10;
+        border-radius: 1.5rem;
+      }
+      .uz-ornament {
+        background: url('https://upload.wikimedia.org/wikipedia/commons/7/7e/Uzbek_carpet_pattern.svg');
+        background-size: 120px;
+        opacity: 0.08;
+        pointer-events: none;
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+      .neon {
+        text-shadow: 0 0 8px #00ffb3, 0 0 16px #00c3ff;
+      }
+      .circle {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(2px);
+        opacity: 0.18;
+        z-index: 1;
+      }
+      .wave {
+        position: absolute;
+        width: 180px;
+        height: 60px;
+        background: linear-gradient(90deg, #00ffb3 0%, #fff700 100%);
+        border-radius: 100px 100px 0 0;
+        opacity: 0.13;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body class="relative text-white overflow-x-hidden">
+    <div class="uz-ornament"></div>
+    <!-- Декоративные фигуры -->
+    <div class="circle" style="width:220px;height:220px;top:60px;left:-80px;background:radial-gradient(circle,#00ffb3 0,#00c3ff 80%);"></div>
+    <div class="circle" style="width:140px;height:140px;top:600px;right:-60px;background:radial-gradient(circle,#fff700 0,#00ffb3 80%);"></div>
+    <div class="wave" style="top:420px;left:40vw;"></div>
+    <div class="wave" style="top:900px;right:10vw;transform:scaleX(-1);"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-4 py-10 space-y-20">
+      <!-- Хедер -->
+      <header class="text-center mb-12">
+        <h1 class="headline text-5xl md:text-7xl font-bold mb-4">Ташкент: Город Будущего и Традиций</h1>
+        <p class="text-lg text-cyan-200 neon">Июнь 2025 • #trip #futurism #east</p>
+      </header>
+
+      <!-- Миксованный layout -->
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
+        <!-- Фото -->
+        <div class="relative flex items-center justify-center">
+          <img src="./tashkent/g1.jpeg" alt="Вылет в Шымкент" class="rounded-3xl shadow-2xl border-8 border-cyan-400/30 w-full h-72 object-cover object-center" />
+          <span class="absolute bottom-4 left-4 bg-cyan-900/70 px-4 py-1 rounded-full text-cyan-100 text-lg font-bold shadow-xl">Вылет в Шымкент</span>
+        </div>
+        <!-- Текст -->
+        <div class="glass p-8 mosaic-border flex flex-col justify-center">
+          <h2 class="text-2xl font-bold mb-2 headline">Как добраться</h2>
+          <p class="text-base text-cyan-100">Самый простой путь — ночной автобус из Алматы (14ч, 7к тг). Мы выбрали авиабилеты SCAT до Шымкента (5к туда, 8к обратно), а дальше такси до границы Капланбек (6к тг) или автовокзал Казыгурт (1-4к тг, 2ч).</p>
+        </div>
+
+        <!-- Текст -->
+        <div class="glass p-8 mosaic-border flex flex-col justify-center order-2 md:order-3">
+          <h2 class="text-2xl font-bold mb-2 headline">Граница и деньги</h2>
+          <p class="text-base text-cyan-100">Погранпереход Сарыагаш — шумно, но быстро. Много обменников: меняйте тенге на сумы сразу. Остаток — на обратном пути. Паспорт сканируют, но проверяют вручную. Не фоткайте погранцов!</p>
+        </div>
+        <!-- Фото -->
+        <div class="relative flex items-center justify-center order-3 md:order-4">
+          <img src="./tashkent/g7.jpeg" alt="Погранпереход" class="rounded-3xl shadow-2xl border-8 border-yellow-300/30 w-full h-72 object-cover object-center" />
+          <span class="absolute bottom-4 right-4 bg-yellow-900/70 px-4 py-1 rounded-full text-yellow-100 text-lg font-bold shadow-xl">Погранпереход</span>
+        </div>
+
+        <!-- Фото -->
+        <div class="relative flex items-center justify-center order-5 md:order-5">
+          <img src="./tashkent/g4.jpeg" alt="Улицы Ташкента" class="rounded-3xl shadow-2xl border-8 border-green-400/30 w-full h-72 object-cover object-center" />
+          <span class="absolute top-4 left-4 bg-green-900/70 px-4 py-1 rounded-full text-green-100 text-lg font-bold shadow-xl">Улицы Ташкента</span>
+        </div>
+        <!-- Текст -->
+        <div class="glass p-8 mosaic-border flex flex-col justify-center order-4 md:order-6">
+          <h2 class="text-2xl font-bold mb-2 headline">Связь</h2>
+          <p class="text-base text-cyan-100">Симка — 4к за топовый тариф, других нерезидентам не дают. Можно купить на границе. eSIM через Yesim не работает.</p>
+        </div>
+
+        <!-- Текст -->
+        <div class="glass p-8 mosaic-border flex flex-col justify-center order-7 md:order-7">
+          <h2 class="text-2xl font-bold mb-2 headline">Такси и оплата</h2>
+          <p class="text-base text-cyan-100">Такси очень дешёвое (1500 тг за 40 мин до центра). Карты могут не принять даже в хостеле, но доллары — да. Туристический налог: с 32$ — 12$ сверху.</p>
+        </div>
+        <!-- Фото -->
+        <div class="relative flex items-center justify-center order-8 md:order-8">
+          <img src="./tashkent/g3.jpeg" alt="Такси" class="rounded-3xl shadow-2xl border-8 border-cyan-400/30 w-full h-72 object-cover object-center" />
+          <span class="absolute top-4 right-4 bg-cyan-900/70 px-4 py-1 rounded-full text-cyan-100 text-lg font-bold shadow-xl">Такси</span>
+        </div>
+
+        <!-- Фото -->
+        <div class="relative flex items-center justify-center order-9 md:order-9">
+          <img src="./tashkent/g11.jpg" alt="Метро" class="rounded-3xl shadow-2xl border-8 border-yellow-300/30 w-full h-72 object-cover object-center" />
+          <span class="absolute bottom-4 left-4 bg-yellow-900/70 px-4 py-1 rounded-full text-yellow-100 text-lg font-bold shadow-xl">Метро</span>
+        </div>
+        <!-- Текст -->
+        <div class="glass p-8 mosaic-border flex flex-col justify-center order-10 md:order-10">
+          <h2 class="text-2xl font-bold mb-2 headline">Метро</h2>
+          <p class="text-base text-cyan-100">Метро — быстрое, красивое, неглубокое. Обязательно прокатитесь! Следите за ремонтом станций и толпами по выходным.</p>
+        </div>
+
+        <!-- Текст -->
+        <div class="glass p-8 mosaic-border flex flex-col justify-center order-11 md:order-11">
+          <h2 class="text-2xl font-bold mb-2 headline">Аквапарк</h2>
+          <p class="text-base text-cyan-100">Аквапарк у телебашни: 4к на 3 часа, аренда тапочек — тоже 4к. Приходите со своими! В сезон много людей, но терпимо.</p>
+        </div>
+        <!-- Фото -->
+        <div class="relative flex items-center justify-center order-12 md:order-12">
+          <img src="./tashkent/g2.jpeg" alt="Аквапарк" class="rounded-3xl shadow-2xl border-8 border-green-400/30 w-full h-72 object-cover object-center" />
+          <span class="absolute top-4 left-4 bg-green-900/70 px-4 py-1 rounded-full text-green-100 text-lg font-bold shadow-xl">Аквапарк</span>
+        </div>
+
+        <!-- Фото -->
+        <div class="relative flex items-center justify-center order-13 md:order-13">
+          <img src="./tashkent/g5.jpeg" alt="Magic City" class="rounded-3xl shadow-2xl border-8 border-cyan-400/30 w-full h-72 object-cover object-bottom" />
+          <span class="absolute bottom-4 right-4 bg-cyan-900/70 px-4 py-1 rounded-full text-cyan-100 text-lg font-bold shadow-xl">Magic City</span>
+        </div>
+        <!-- Текст -->
+        <div class="glass p-8 mosaic-border flex flex-col justify-center order-14 md:order-14">
+          <h2 class="text-2xl font-bold mb-2 headline">Что посмотреть</h2>
+          <ul class="text-base text-cyan-100 list-disc list-inside space-y-1">
+            <li>Старый Ташкентленд</li>
+            <li>Парк у музея репрессий</li>
+            <li>Magic City вечером</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Блок про "Тошкент, сомса, Узбекистон" -->
+      <section class="relative z-10 mt-20 mb-10">
+        <div class="glass p-8 md:p-12 mosaic-border flex flex-col items-center text-center max-w-3xl mx-auto">
+          <h2 class="headline text-3xl mb-4">Тошкент, сомса, Узбекистон!</h2>
+          <p class="text-lg text-cyan-100 mb-2">В Узбекистане быстро учишься: не ташкент, а <span class="text-yellow-300 font-bold">тошкент</span>! Не самса, а <span class="text-green-300 font-bold">сомса</span>! Не Узбекистан, а <span class="text-cyan-300 font-bold">Узбекистон</span>! Иначе — не поймут, а может и обидятся 😉</p>
+          <p class="text-base text-cyan-200">Восточный вайб — это не только архитектура, но и язык, и отношение к деталям. Привыкай к местному колориту и не забывай улыбаться!</p>
+        </div>
+      </section>
+
+      <!-- Галерея -->
+      <section>
+        <h2 class="headline text-4xl md:text-5xl text-center mb-10">Ташкент в 12 кадрах</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div class="relative group">
+            <div class="absolute inset-0 rounded-2xl border-4 border-cyan-400 opacity-30 group-hover:opacity-60 transition"></div>
+            <img src="./tashkent/g1.jpeg" alt="Фото 1" class="rounded-2xl w-full h-48 object-cover shadow-lg group-hover:scale-105 transition" />
+          </div>
+          <div class="relative group">
+            <div class="absolute inset-0 rounded-2xl border-4 border-yellow-300 opacity-30 group-hover:opacity-60 transition"></div>
+            <img src="./tashkent/g2.jpeg" alt="Фото 2" class="rounded-2xl w-full h-48 object-cover shadow-lg group-hover:scale-105 transition" />
+          </div>
+          <div class="relative group">
+            <div class="absolute inset-0 rounded-2xl border-4 border-green-400 opacity-30 group-hover:opacity-60 transition"></div>
+            <img src="./tashkent/g3.jpeg" alt="Фото 3" class="rounded-2xl w-full h-48 object-cover shadow-lg group-hover:scale-105 transition" />
+          </div>
+          <div class="relative group">
+            <div class="absolute inset-0 rounded-2xl border-4 border-cyan-400 opacity-30 group-hover:opacity-60 transition"></div>
+            <img src="./tashkent/g4.jpeg" alt="Фото 4" class="rounded-2xl w-full h-48 object-cover shadow-lg group-hover:scale-105 transition" />
+          </div>
+          <div class="relative group">
+            <div class="absolute inset-0 rounded-2xl border-4 border-yellow-300 opacity-30 group-hover:opacity-60 transition"></div>
+            <img src="./tashkent/g5.jpeg" alt="Фото 5" class="rounded-2xl w-full h-48 object-cover shadow-lg group-hover:scale-105 transition" />
+          </div>
+          <div class="relative group">
+            <div class="absolute inset-0 rounded-2xl border-4 border-green-400 opacity-30 group-hover:opacity-60 transition"></div>
+            <img src="./tashkent/g6.jpeg" alt="Фото 6" class="rounded-2xl w-full h-48 object-cover shadow-lg group-hover:scale-105 transition" />
+          </div>
+          <div class="relative group">
+            <div class="absolute inset-0 rounded-2xl border-4 border-cyan-400 opacity-30 group-hover:opacity-60 transition"></div>
+            <img src="./tashkent/g7.jpeg" alt="Фото 7" class="rounded-2xl w-full h-48 object-cover shadow-lg group-hover:scale-105 transition" />
+          </div>
+          <div class="relative group">
+            <div class="absolute inset-0 rounded-2xl border-4 border-yellow-300 opacity-30 group-hover:opacity-60 transition"></div>
+            <img src="./tashkent/g8.jpeg" alt="Фото 8" class="rounded-2xl w-full h-48 object-cover shadow-lg group-hover:scale-105 transition" />
+          </div>
+          <div class="relative group">
+            <div class="absolute inset-0 rounded-2xl border-4 border-green-400 opacity-30 group-hover:opacity-60 transition"></div>
+            <img src="./tashkent/g9.jpeg" alt="Фото 9" class="rounded-2xl w-full h-48 object-cover shadow-lg group-hover:scale-105 transition" />
+          </div>
+          <div class="relative group">
+            <div class="absolute inset-0 rounded-2xl border-4 border-cyan-400 opacity-30 group-hover:opacity-60 transition"></div>
+            <img src="./tashkent/g10.jpeg" alt="Фото 10" class="rounded-2xl w-full h-48 object-cover shadow-lg group-hover:scale-105 transition" />
+          </div>
+          <div class="relative group">
+            <div class="absolute inset-0 rounded-2xl border-4 border-yellow-300 opacity-30 group-hover:opacity-60 transition"></div>
+            <img src="./tashkent/g11.jpg" alt="Фото 11" class="rounded-2xl w-full h-48 object-cover shadow-lg group-hover:scale-105 transition" />
+          </div>
+          <div class="relative group">
+            <div class="absolute inset-0 rounded-2xl border-4 border-green-400 opacity-30 group-hover:opacity-60 transition"></div>
+            <img src="./tashkent/g12.jpg" alt="Фото 12" class="rounded-2xl w-full h-48 object-cover shadow-lg group-hover:scale-105 transition" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Итог -->
+      <footer class="mt-20 text-center">
+        <div class="w-full flex justify-center mb-4">
+          <div class="h-2 w-40 rounded-full bg-gradient-to-r from-cyan-400 via-yellow-300 to-green-400"></div>
+        </div>
+        <p class="text-xl text-cyan-100 max-w-2xl mx-auto mb-2">
+          Ташкент — город, где футуризм новых кварталов сочетается с восточной мозаикой и ковровыми узорами. Здесь современность не вытесняет уют старых улиц. Два дня — и хочется вернуться за новым вдохновением.
+        </p>
+        <p class="headline text-2xl mt-6">🕌 Сделано с душой • Илья • 2025</p>
+      </footer>
+    </div>
+  </body>
+</html>
